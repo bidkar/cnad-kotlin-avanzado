@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/gris">
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivMoldeCocheImagen"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/hw_toad_sm" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tvMoldeCocheTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título del coche"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMoldeCocheDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvMoldeCochePrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

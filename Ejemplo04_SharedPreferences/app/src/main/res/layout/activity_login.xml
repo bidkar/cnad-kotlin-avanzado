@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLoginToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/dgeti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLoginEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:ems="10"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextLoginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLoginToolbar" />
+
+    <Button
+        app:icon="@drawable/ic_baseline_login_24"
+        android:id="@+id/buttonLoginSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="169dp"
+        android:text="Iniciar sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/switchLoginRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:text="Recordar usuario"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLoginSignIn"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/buttonLoginSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/switchLoginRemember"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/switchLoginRemember"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmailAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
